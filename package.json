@@ -1,14 +1,34 @@
 {
-  "name": "curso2",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "standard": "^17.1.0"
-  }
+    "name": "curso-node",
+    "version": "1.0.0",
+    "description": "Node Testing",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon 1.http.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MaxDronCode/Curso-Node.git"
+    },
+    "keywords": [
+        "curso",
+        "node"
+    ],
+    "author": "max",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MaxDronCode/Curso-Node/issues"
+    },
+    "homepage": "https://github.com/MaxDronCode/Curso-Node#readme",
+    "dependencies": {
+        "express": "4.19.2",
+        "picocolors": "1.0.1"
+    },
+    "devDependencies": {
+        "standard": "^17.1.0"
+    },
+    "eslintConfig": {
+        "extends": "standard"
+    }
 }

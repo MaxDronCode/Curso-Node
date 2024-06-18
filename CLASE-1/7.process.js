@@ -1,7 +1,7 @@
 // PROCESS : Objeto global que proporciona informacion y control sobre el proceso actual de ejecucion
 // Que elementos podemos sacar del proceso actual?
 // 1. Argumentos de entrada
-//console.log(process.argv)
+// console.log(process.argv)
 // 2. Podemos controlar los eventos del proceso
 // process.on('exit', () => {
 //     // Limpiar los recursos por ejemplo, o la consola...

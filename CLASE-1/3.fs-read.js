@@ -1,4 +1,4 @@
-// SISTEMA ASÍNCRONO CON CALLBACKS 
+// SISTEMA ASÍNCRONO CON CALLBACKS
 const fs = require('node:fs')
 const { text } = require('stream/consumers')
 
@@ -10,9 +10,9 @@ console.log('Leyendo el primer archivo...')
 // Que son funciones que se ejecutan cuando una tarea ha terminado
 // De manera que comentamos la linea 5 y la volvemos a hacer abajo con el callback
 fs.readFile('./archivo.txt', 'utf-8', (err, text) => { // quiero que me leas este archivo, lo codifiques en utf8 y cuando termines de leerlo ejecutes el siguiente codigo
-    console.log(text)
-}) 
-console.log("Hacer cosas mientras se lee el archivo...")
+  console.log(text)
+})
+console.log('Hacer cosas mientras se lee el archivo...')
 // console.log(file)
 
 // console.log('Archivo pelao: ', file)
@@ -22,11 +22,11 @@ console.log("Hacer cosas mientras se lee el archivo...")
 console.log('Leyendo el segundo archivo...')
 // const file2 = fs.readFile('./archivo2.txt', 'utf-8')
 fs.readFile('./archivo2.txt', 'utf-8', (err, text) => {
-    console.log(text)
+  console.log(text)
 })
 
 // console.log(file2)
 
 // Aqui se puede apreciar como los eventos se ejecutan ASINCRONAMENTE con readFile
 // NO SABEMOS cual llega ANTES y cual DESPUÉS
-// IMPORTANCIA DEL CALLBACK -> Función que sabemos que se ejecutará cuando ese evento termine 
+// IMPORTANCIA DEL CALLBACK -> Función que sabemos que se ejecutará cuando ese evento termine
